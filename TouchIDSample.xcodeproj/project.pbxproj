@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F09197A322C69163005ED1D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197A222C69163005ED1D2 /* AppDelegate.swift */; };
-		F09197A522C69163005ED1D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197A422C69163005ED1D2 /* ViewController.swift */; };
-		F09197A822C69163005ED1D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09197A622C69163005ED1D2 /* Main.storyboard */; };
+		F09197A522C69163005ED1D2 /* TouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197A422C69163005ED1D2 /* TouchIDViewController.swift */; };
 		F09197AA22C69164005ED1D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09197A922C69164005ED1D2 /* Assets.xcassets */; };
 		F09197AD22C69164005ED1D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09197AB22C69164005ED1D2 /* LaunchScreen.storyboard */; };
 		F09197B822C69164005ED1D2 /* TouchIDSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197B722C69164005ED1D2 /* TouchIDSampleTests.swift */; };
+		F09197C722C691F3005ED1D2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197C622C691F3005ED1D2 /* Coordinator.swift */; };
+		F09197CA22C69277005ED1D2 /* TouchIDCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197C922C69277005ED1D2 /* TouchIDCoordinator.swift */; };
+		F09197CC22C695EB005ED1D2 /* TouchIdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197CB22C695EB005ED1D2 /* TouchIdView.swift */; };
+		F09197CF22C69635005ED1D2 /* TouchIdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197CE22C69635005ED1D2 /* TouchIdViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +31,17 @@
 /* Begin PBXFileReference section */
 		F091979F22C69163005ED1D2 /* TouchIDSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchIDSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09197A222C69163005ED1D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F09197A422C69163005ED1D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F09197A722C69163005ED1D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F09197A422C69163005ED1D2 /* TouchIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDViewController.swift; sourceTree = "<group>"; };
 		F09197A922C69164005ED1D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F09197AC22C69164005ED1D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F09197AE22C69164005ED1D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F09197B322C69164005ED1D2 /* TouchIDSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchIDSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09197B722C69164005ED1D2 /* TouchIDSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDSampleTests.swift; sourceTree = "<group>"; };
 		F09197B922C69164005ED1D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F09197C622C691F3005ED1D2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F09197C922C69277005ED1D2 /* TouchIDCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDCoordinator.swift; sourceTree = "<group>"; };
+		F09197CB22C695EB005ED1D2 /* TouchIdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIdView.swift; sourceTree = "<group>"; };
+		F09197CE22C69635005ED1D2 /* TouchIdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIdViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +83,12 @@
 		F09197A122C69163005ED1D2 /* TouchIDSample */ = {
 			isa = PBXGroup;
 			children = (
-				F09197A222C69163005ED1D2 /* AppDelegate.swift */,
-				F09197A422C69163005ED1D2 /* ViewController.swift */,
-				F09197A622C69163005ED1D2 /* Main.storyboard */,
-				F09197A922C69164005ED1D2 /* Assets.xcassets */,
-				F09197AB22C69164005ED1D2 /* LaunchScreen.storyboard */,
-				F09197AE22C69164005ED1D2 /* Info.plist */,
+				F09197CD22C69615005ED1D2 /* ViewModels */,
+				F09197C522C691D1005ED1D2 /* Protocols */,
+				F09197C422C691BF005ED1D2 /* Views */,
+				F09197C322C691B0005ED1D2 /* Controllers */,
+				F09197C222C691A7005ED1D2 /* Coordinators */,
+				F09197C822C69217005ED1D2 /* Others */,
 			);
 			path = TouchIDSample;
 			sourceTree = "<group>";
@@ -94,6 +100,57 @@
 				F09197B922C69164005ED1D2 /* Info.plist */,
 			);
 			path = TouchIDSampleTests;
+			sourceTree = "<group>";
+		};
+		F09197C222C691A7005ED1D2 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				F09197C922C69277005ED1D2 /* TouchIDCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F09197C322C691B0005ED1D2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F09197A422C69163005ED1D2 /* TouchIDViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F09197C422C691BF005ED1D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F09197CB22C695EB005ED1D2 /* TouchIdView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F09197C522C691D1005ED1D2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F09197C622C691F3005ED1D2 /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F09197C822C69217005ED1D2 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				F09197A222C69163005ED1D2 /* AppDelegate.swift */,
+				F09197A922C69164005ED1D2 /* Assets.xcassets */,
+				F09197AB22C69164005ED1D2 /* LaunchScreen.storyboard */,
+				F09197AE22C69164005ED1D2 /* Info.plist */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		F09197CD22C69615005ED1D2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F09197CE22C69635005ED1D2 /* TouchIdViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +236,6 @@
 			files = (
 				F09197AD22C69164005ED1D2 /* LaunchScreen.storyboard in Resources */,
 				F09197AA22C69164005ED1D2 /* Assets.xcassets in Resources */,
-				F09197A822C69163005ED1D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F09197A522C69163005ED1D2 /* ViewController.swift in Sources */,
+				F09197A522C69163005ED1D2 /* TouchIDViewController.swift in Sources */,
 				F09197A322C69163005ED1D2 /* AppDelegate.swift in Sources */,
+				F09197C722C691F3005ED1D2 /* Coordinator.swift in Sources */,
+				F09197CF22C69635005ED1D2 /* TouchIdViewModel.swift in Sources */,
+				F09197CA22C69277005ED1D2 /* TouchIDCoordinator.swift in Sources */,
+				F09197CC22C695EB005ED1D2 /* TouchIdView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +281,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F09197A622C69163005ED1D2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F09197A722C69163005ED1D2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F09197AB22C69164005ED1D2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,7 +414,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2VH4D4A4M;
-				INFOPLIST_FILE = TouchIDSample/Info.plist;
+				INFOPLIST_FILE = TouchIDSample/Others/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2VH4D4A4M;
-				INFOPLIST_FILE = TouchIDSample/Info.plist;
+				INFOPLIST_FILE = TouchIDSample/Others/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

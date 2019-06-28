@@ -13,9 +13,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    lazy var navigationController: UINavigationController = {
+        let navigationController = UINavigationController()
+        navigationController.navigationBar.isTranslucent = false
+        return navigationController
+    }()
 
+    var mainCoordinator: TouchIDCoordinator?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow()
+        window?.rootViewController = navigationController
+        
+        let touchIdCoordinator = TouchIDCoordinator(presenter: navigationController)
+        touchIdCoordinator.start()
+        
+        window?.makeKeyAndVisible()
+        
+        mainCoordinator = touchIdCoordinator
         return true
     }
 
