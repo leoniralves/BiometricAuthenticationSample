@@ -19,13 +19,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return navigationController
     }()
 
-    var mainCoordinator: TouchIDCoordinator?
+    var mainCoordinator: BiometricAuthenticationCoordinator?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()
         window?.rootViewController = navigationController
         
-        let touchIdCoordinator = TouchIDCoordinator(presenter: navigationController)
+        let touchIdCoordinator = BiometricAuthenticationCoordinator(presenter: navigationController)
         touchIdCoordinator.start()
         
         window?.makeKeyAndVisible()

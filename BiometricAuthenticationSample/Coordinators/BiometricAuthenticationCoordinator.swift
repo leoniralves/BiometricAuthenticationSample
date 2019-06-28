@@ -1,5 +1,5 @@
 //
-//  TouchIDCoordinator.swift
+//  BiometricAuthenticationCoordinator.swift
 //  TouchIDSample
 //
 //  Created by Leonir Alves Deolindo on 28/06/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TouchIDCoordinator: Coordinator {
+class BiometricAuthenticationCoordinator: Coordinator {
     
     private var presenter: UINavigationController?
     
@@ -21,8 +21,8 @@ class TouchIDCoordinator: Coordinator {
             return
         }
         
-        let viewModel = TouchIdViewModel()
-        let touchIdViewController = TouchIDViewController(viewModel: viewModel)
+        let viewModel = BiometricAuthenticationViewModel()
+        let touchIdViewController = BiometricAuthenticationViewController(viewModel: viewModel)
         presenter.show(touchIdViewController, sender: nil)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  TouchIDViewController.swift
+//  BiometricAuthenticationViewController.swift
 //  TouchIDSample
 //
 //  Created by Leonir Alves Deolindo on 28/06/19.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class TouchIDViewController: UIViewController {
+class BiometricAuthenticationViewController: UIViewController {
     
     lazy private var touchIdView = {
-       return TouchIdView()
+       return BiometricAuthenticationView()
     }()
     
     // Mark: - Lifecycle
@@ -29,10 +29,9 @@ class TouchIDViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    init(viewModel: TouchIdViewModel) {
+    init(viewModel: BiometricAuthenticationViewModel) {
         super.init(nibName: nil, bundle: nil)
         touchIdView.configure(viewModel: viewModel)
         title = viewModel.title
     }
 }
-

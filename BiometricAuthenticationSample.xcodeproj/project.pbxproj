@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F09197A322C69163005ED1D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197A222C69163005ED1D2 /* AppDelegate.swift */; };
-		F09197A522C69163005ED1D2 /* TouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197A422C69163005ED1D2 /* TouchIDViewController.swift */; };
+		F09197A522C69163005ED1D2 /* BiometricAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197A422C69163005ED1D2 /* BiometricAuthenticationViewController.swift */; };
 		F09197AA22C69164005ED1D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09197A922C69164005ED1D2 /* Assets.xcassets */; };
 		F09197AD22C69164005ED1D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09197AB22C69164005ED1D2 /* LaunchScreen.storyboard */; };
-		F09197B822C69164005ED1D2 /* TouchIDSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197B722C69164005ED1D2 /* TouchIDSampleTests.swift */; };
+		F09197B822C69164005ED1D2 /* TouchIDViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197B722C69164005ED1D2 /* TouchIDViewModelTests.swift */; };
 		F09197C722C691F3005ED1D2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197C622C691F3005ED1D2 /* Coordinator.swift */; };
-		F09197CA22C69277005ED1D2 /* TouchIDCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197C922C69277005ED1D2 /* TouchIDCoordinator.swift */; };
-		F09197CC22C695EB005ED1D2 /* TouchIdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197CB22C695EB005ED1D2 /* TouchIdView.swift */; };
-		F09197CF22C69635005ED1D2 /* TouchIdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197CE22C69635005ED1D2 /* TouchIdViewModel.swift */; };
+		F09197CA22C69277005ED1D2 /* BiometricAuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197C922C69277005ED1D2 /* BiometricAuthenticationCoordinator.swift */; };
+		F09197CC22C695EB005ED1D2 /* BiometricAuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197CB22C695EB005ED1D2 /* BiometricAuthenticationView.swift */; };
+		F09197CF22C69635005ED1D2 /* BiometricAuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197CE22C69635005ED1D2 /* BiometricAuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,19 +29,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F091979F22C69163005ED1D2 /* TouchIDSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchIDSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F091979F22C69163005ED1D2 /* BiometricAuthenticationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiometricAuthenticationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09197A222C69163005ED1D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F09197A422C69163005ED1D2 /* TouchIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDViewController.swift; sourceTree = "<group>"; };
+		F09197A422C69163005ED1D2 /* BiometricAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticationViewController.swift; sourceTree = "<group>"; };
 		F09197A922C69164005ED1D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F09197AC22C69164005ED1D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F09197AE22C69164005ED1D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F09197B322C69164005ED1D2 /* TouchIDSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchIDSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F09197B722C69164005ED1D2 /* TouchIDSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDSampleTests.swift; sourceTree = "<group>"; };
+		F09197B322C69164005ED1D2 /* BiometricAuthenticationSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiometricAuthenticationSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09197B722C69164005ED1D2 /* TouchIDViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDViewModelTests.swift; sourceTree = "<group>"; };
 		F09197B922C69164005ED1D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F09197C622C691F3005ED1D2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		F09197C922C69277005ED1D2 /* TouchIDCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDCoordinator.swift; sourceTree = "<group>"; };
-		F09197CB22C695EB005ED1D2 /* TouchIdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIdView.swift; sourceTree = "<group>"; };
-		F09197CE22C69635005ED1D2 /* TouchIdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIdViewModel.swift; sourceTree = "<group>"; };
+		F09197C922C69277005ED1D2 /* BiometricAuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		F09197CB22C695EB005ED1D2 /* BiometricAuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticationView.swift; sourceTree = "<group>"; };
+		F09197CE22C69635005ED1D2 /* BiometricAuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +65,8 @@
 		F091979622C69163005ED1D2 = {
 			isa = PBXGroup;
 			children = (
-				F09197A122C69163005ED1D2 /* TouchIDSample */,
-				F09197B622C69164005ED1D2 /* TouchIDSampleTests */,
+				F09197A122C69163005ED1D2 /* BiometricAuthenticationSample */,
+				F09197B622C69164005ED1D2 /* BiometricAuthenticationSampleTests */,
 				F09197A022C69163005ED1D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,13 +74,13 @@
 		F09197A022C69163005ED1D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F091979F22C69163005ED1D2 /* TouchIDSample.app */,
-				F09197B322C69164005ED1D2 /* TouchIDSampleTests.xctest */,
+				F091979F22C69163005ED1D2 /* BiometricAuthenticationSample.app */,
+				F09197B322C69164005ED1D2 /* BiometricAuthenticationSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F09197A122C69163005ED1D2 /* TouchIDSample */ = {
+		F09197A122C69163005ED1D2 /* BiometricAuthenticationSample */ = {
 			isa = PBXGroup;
 			children = (
 				F09197CD22C69615005ED1D2 /* ViewModels */,
@@ -90,22 +90,22 @@
 				F09197C222C691A7005ED1D2 /* Coordinators */,
 				F09197C822C69217005ED1D2 /* Others */,
 			);
-			path = TouchIDSample;
+			path = BiometricAuthenticationSample;
 			sourceTree = "<group>";
 		};
-		F09197B622C69164005ED1D2 /* TouchIDSampleTests */ = {
+		F09197B622C69164005ED1D2 /* BiometricAuthenticationSampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				F09197B722C69164005ED1D2 /* TouchIDSampleTests.swift */,
+				F09197B722C69164005ED1D2 /* TouchIDViewModelTests.swift */,
 				F09197B922C69164005ED1D2 /* Info.plist */,
 			);
-			path = TouchIDSampleTests;
+			path = BiometricAuthenticationSampleTests;
 			sourceTree = "<group>";
 		};
 		F09197C222C691A7005ED1D2 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				F09197C922C69277005ED1D2 /* TouchIDCoordinator.swift */,
+				F09197C922C69277005ED1D2 /* BiometricAuthenticationCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 		F09197C322C691B0005ED1D2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F09197A422C69163005ED1D2 /* TouchIDViewController.swift */,
+				F09197A422C69163005ED1D2 /* BiometricAuthenticationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -121,7 +121,7 @@
 		F09197C422C691BF005ED1D2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F09197CB22C695EB005ED1D2 /* TouchIdView.swift */,
+				F09197CB22C695EB005ED1D2 /* BiometricAuthenticationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,7 +148,7 @@
 		F09197CD22C69615005ED1D2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				F09197CE22C69635005ED1D2 /* TouchIdViewModel.swift */,
+				F09197CE22C69635005ED1D2 /* BiometricAuthenticationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -156,9 +156,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F091979E22C69163005ED1D2 /* TouchIDSample */ = {
+		F091979E22C69163005ED1D2 /* BiometricAuthenticationSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F09197BC22C69164005ED1D2 /* Build configuration list for PBXNativeTarget "TouchIDSample" */;
+			buildConfigurationList = F09197BC22C69164005ED1D2 /* Build configuration list for PBXNativeTarget "BiometricAuthenticationSample" */;
 			buildPhases = (
 				F091979B22C69163005ED1D2 /* Sources */,
 				F091979C22C69163005ED1D2 /* Frameworks */,
@@ -168,14 +168,14 @@
 			);
 			dependencies = (
 			);
-			name = TouchIDSample;
+			name = BiometricAuthenticationSample;
 			productName = TouchIDSample;
-			productReference = F091979F22C69163005ED1D2 /* TouchIDSample.app */;
+			productReference = F091979F22C69163005ED1D2 /* BiometricAuthenticationSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F09197B222C69164005ED1D2 /* TouchIDSampleTests */ = {
+		F09197B222C69164005ED1D2 /* BiometricAuthenticationSampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F09197BF22C69164005ED1D2 /* Build configuration list for PBXNativeTarget "TouchIDSampleTests" */;
+			buildConfigurationList = F09197BF22C69164005ED1D2 /* Build configuration list for PBXNativeTarget "BiometricAuthenticationSampleTests" */;
 			buildPhases = (
 				F09197AF22C69164005ED1D2 /* Sources */,
 				F09197B022C69164005ED1D2 /* Frameworks */,
@@ -186,9 +186,9 @@
 			dependencies = (
 				F09197B522C69164005ED1D2 /* PBXTargetDependency */,
 			);
-			name = TouchIDSampleTests;
+			name = BiometricAuthenticationSampleTests;
 			productName = TouchIDSampleTests;
-			productReference = F09197B322C69164005ED1D2 /* TouchIDSampleTests.xctest */;
+			productReference = F09197B322C69164005ED1D2 /* BiometricAuthenticationSampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F091979A22C69163005ED1D2 /* Build configuration list for PBXProject "TouchIDSample" */;
+			buildConfigurationList = F091979A22C69163005ED1D2 /* Build configuration list for PBXProject "BiometricAuthenticationSample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,8 +223,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F091979E22C69163005ED1D2 /* TouchIDSample */,
-				F09197B222C69164005ED1D2 /* TouchIDSampleTests */,
+				F091979E22C69163005ED1D2 /* BiometricAuthenticationSample */,
+				F09197B222C69164005ED1D2 /* BiometricAuthenticationSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,12 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F09197A522C69163005ED1D2 /* TouchIDViewController.swift in Sources */,
+				F09197A522C69163005ED1D2 /* BiometricAuthenticationViewController.swift in Sources */,
 				F09197A322C69163005ED1D2 /* AppDelegate.swift in Sources */,
 				F09197C722C691F3005ED1D2 /* Coordinator.swift in Sources */,
-				F09197CF22C69635005ED1D2 /* TouchIdViewModel.swift in Sources */,
-				F09197CA22C69277005ED1D2 /* TouchIDCoordinator.swift in Sources */,
-				F09197CC22C695EB005ED1D2 /* TouchIdView.swift in Sources */,
+				F09197CF22C69635005ED1D2 /* BiometricAuthenticationViewModel.swift in Sources */,
+				F09197CA22C69277005ED1D2 /* BiometricAuthenticationCoordinator.swift in Sources */,
+				F09197CC22C695EB005ED1D2 /* BiometricAuthenticationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F09197B822C69164005ED1D2 /* TouchIDSampleTests.swift in Sources */,
+				F09197B822C69164005ED1D2 /* TouchIDViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +275,7 @@
 /* Begin PBXTargetDependency section */
 		F09197B522C69164005ED1D2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F091979E22C69163005ED1D2 /* TouchIDSample */;
+			target = F091979E22C69163005ED1D2 /* BiometricAuthenticationSample */;
 			targetProxy = F09197B422C69164005ED1D2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -414,12 +414,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2VH4D4A4M;
-				INFOPLIST_FILE = TouchIDSample/Others/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BiometricAuthenticationSample/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leonirdeolindo.TouchIDSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leonirdeolindo.BiometricAuthenticationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -432,12 +432,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F2VH4D4A4M;
-				INFOPLIST_FILE = TouchIDSample/Others/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BiometricAuthenticationSample/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leonirdeolindo.TouchIDSample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.leonirdeolindo.BiometricAuthenticationSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,7 +461,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchIDSample.app/TouchIDSample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiometricAuthenticationSample.app/BiometricAuthenticationSample";
 			};
 			name = Debug;
 		};
@@ -482,14 +482,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchIDSample.app/TouchIDSample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiometricAuthenticationSample.app/BiometricAuthenticationSample";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F091979A22C69163005ED1D2 /* Build configuration list for PBXProject "TouchIDSample" */ = {
+		F091979A22C69163005ED1D2 /* Build configuration list for PBXProject "BiometricAuthenticationSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F09197BA22C69164005ED1D2 /* Debug */,
@@ -498,7 +498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F09197BC22C69164005ED1D2 /* Build configuration list for PBXNativeTarget "TouchIDSample" */ = {
+		F09197BC22C69164005ED1D2 /* Build configuration list for PBXNativeTarget "BiometricAuthenticationSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F09197BD22C69164005ED1D2 /* Debug */,
@@ -507,7 +507,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F09197BF22C69164005ED1D2 /* Build configuration list for PBXNativeTarget "TouchIDSampleTests" */ = {
+		F09197BF22C69164005ED1D2 /* Build configuration list for PBXNativeTarget "BiometricAuthenticationSampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F09197C022C69164005ED1D2 /* Debug */,

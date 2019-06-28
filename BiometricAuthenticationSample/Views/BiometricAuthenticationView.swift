@@ -1,5 +1,5 @@
 //
-//  TouchIdView.swift
+//  BiometricAuthenticationView.swift
 //  TouchIDSample
 //
 //  Created by Leonir Alves Deolindo on 28/06/19.
@@ -8,9 +8,10 @@
 
 import UIKit
 
-class TouchIdView: UIView {
+class BiometricAuthenticationView: UIView {
     
-    private var viewModel: TouchIdViewModel!
+    private var viewModel: BiometricAuthenticationViewModel!
+    private var btnTouchID: UIButton!
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -22,13 +23,13 @@ class TouchIdView: UIView {
         setupView()
     }
     
-    func configure(viewModel: TouchIdViewModel) {
+    func configure(viewModel: BiometricAuthenticationViewModel) {
         self.viewModel = viewModel
+        btnTouchID.setTitle(viewModel.title, for: .normal)
     }
     
     private func setupView() {
-        let btnTouchID = UIButton(type: .system)
-        btnTouchID.setTitle("TouchID", for: .normal)
+        btnTouchID = UIButton(type: .system)
         btnTouchID.addTarget(self, action: #selector(actionTouchID), for: .touchUpInside)
         
         addSubview(btnTouchID)

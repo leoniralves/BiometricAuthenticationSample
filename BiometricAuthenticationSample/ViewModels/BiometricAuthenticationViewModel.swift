@@ -1,5 +1,5 @@
 //
-//  TouchIdViewModel.swift
+//  BiometricAuthenticationViewModel.swift
 //  TouchIDSample
 //
 //  Created by Leonir Alves Deolindo on 28/06/19.
@@ -9,22 +9,41 @@
 import Foundation
 import LocalAuthentication
 
-class TouchIdViewModel {
+enum BiometricType: String {
+    case faceID = "FaceID"
+    case touchID = "TouchID"
+    case passcode = "Passcode"
+}
+
+class BiometricAuthenticationViewModel {
     
     private(set) var title: String!
+    lazy private var context = {
+        return LAContext()
+    }()
     
     init() {
-        title = "TouchID"
+        title = biometricType().rawValue
+    }
+    
+    private func biometricType() -> BiometricType {
+        var error: NSError?
+        if !context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
+            debugPrint("A não pode ser realizada por biometria. Sendo assim será feita por passcode, caso o mesmo esteja configurado")
+        }
+        
+        switch context.biometryType {
+        case .faceID:
+            return .faceID
+        case .touchID:
+            return .touchID
+        default:
+            return .passcode
+        }
     }
 
     func configureTouchID() {
-        let context = LAContext()
-        let reasonString = "Test de Autenticação biométrica por TouchID"
-        
-        var error: NSError?
-        if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
-            debugPrint("A não pode ser realizada por biometria. Sendo assim será feita por passcode, caso o mesmo esteja configurado")
-        }
+        let reasonString = "Teste de Autenticação biométrica"
         
         context.evaluatePolicy(.deviceOwnerAuthentication,
                                localizedReason: reasonString)
