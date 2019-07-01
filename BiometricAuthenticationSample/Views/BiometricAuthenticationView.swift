@@ -39,6 +39,12 @@ class BiometricAuthenticationView: UIView {
     }
     
     @objc private func actionTouchID() {
-        viewModel.configureTouchID()
+        viewModel.configureTouchID { error in
+            if let error = error {
+                debugPrint(error)
+            } else {
+                debugPrint("Segue o fluxo ;-)")
+            }
+        }
     }
 }

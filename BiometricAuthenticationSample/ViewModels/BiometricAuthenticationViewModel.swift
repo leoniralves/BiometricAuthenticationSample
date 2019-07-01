@@ -42,17 +42,32 @@ class BiometricAuthenticationViewModel {
         }
     }
 
-    func configureTouchID() {
+    func configureTouchID(completion: @escaping ((_ error: AuthenticationError?) -> Void)) {
         let reasonString = "Teste de Autenticação biométrica"
         
         context.evaluatePolicy(.deviceOwnerAuthentication,
                                localizedReason: reasonString)
         { (success, error) in
             if success {
-                debugPrint("Sucesso")
+                completion(nil)
             } else {
-                if let error = error {
-                    debugPrint(error)
+                guard let error = error else {
+                    return completion(.other)
+                }
+                
+                switch error {
+                case LAError.appCancel:
+                    completion(.appCancel)
+                case LAError.authenticationFailed:
+                    completion(.authenticationFailed)
+                case LAError.biometryLockout:
+                    completion(.biometryLockout)
+                case LAError.biometryNotAvailable:
+                    completion(.biometryNotAvailable)
+                case LAError.biometryNotEnrolled:
+                    completion(.biometryNotEnrolled)
+                default:
+                    completion(.other)
                 }
             }
         }

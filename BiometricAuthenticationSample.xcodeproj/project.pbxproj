@@ -16,6 +16,7 @@
 		F09197CA22C69277005ED1D2 /* BiometricAuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197C922C69277005ED1D2 /* BiometricAuthenticationCoordinator.swift */; };
 		F09197CC22C695EB005ED1D2 /* BiometricAuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197CB22C695EB005ED1D2 /* BiometricAuthenticationView.swift */; };
 		F09197CF22C69635005ED1D2 /* BiometricAuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09197CE22C69635005ED1D2 /* BiometricAuthenticationViewModel.swift */; };
+		F098938222CAA5A000D41439 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F098938122CAA5A000D41439 /* AuthenticationError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		F09197C922C69277005ED1D2 /* BiometricAuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticationCoordinator.swift; sourceTree = "<group>"; };
 		F09197CB22C695EB005ED1D2 /* BiometricAuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticationView.swift; sourceTree = "<group>"; };
 		F09197CE22C69635005ED1D2 /* BiometricAuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticationViewModel.swift; sourceTree = "<group>"; };
+		F098938122CAA5A000D41439 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		F09197A122C69163005ED1D2 /* BiometricAuthenticationSample */ = {
 			isa = PBXGroup;
 			children = (
+				F09197D022CA8AF5005ED1D2 /* Enums */,
 				F09197CD22C69615005ED1D2 /* ViewModels */,
 				F09197C522C691D1005ED1D2 /* Protocols */,
 				F09197C422C691BF005ED1D2 /* Views */,
@@ -151,6 +154,14 @@
 				F09197CE22C69635005ED1D2 /* BiometricAuthenticationViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F09197D022CA8AF5005ED1D2 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				F098938122CAA5A000D41439 /* AuthenticationError.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F098938222CAA5A000D41439 /* AuthenticationError.swift in Sources */,
 				F09197A522C69163005ED1D2 /* BiometricAuthenticationViewController.swift in Sources */,
 				F09197A322C69163005ED1D2 /* AppDelegate.swift in Sources */,
 				F09197C722C691F3005ED1D2 /* Coordinator.swift in Sources */,
